@@ -2,7 +2,10 @@
 include_once "config.php";
 $url = 'https://' . $user . ':' . $password . '@mobilevikings.com/api/2.0/basic/points/referrals.json?msisdn=' . $msisdn;
 $contents = file_get_contents($url);
-if (!$contents) {
+if ($contents === false) {
+	echo (' verschillende personen ');
+}
+else {
 	$contents = utf8_encode($contents);
 	$results = json_decode($contents, true);
 	echo('<ul>' . PHP_EOL);
@@ -21,8 +24,5 @@ if (!$contents) {
 		$i++;
 	}
 	echo('<ul>' . PHP_EOL);
-}
-else {
-	echo (' verschillende personen ');
 }
 ?>
