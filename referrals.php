@@ -1,4 +1,3 @@
-<link href="./inline-list.css" rel="stylesheet" type="text/css">
 <div
 	id="inline-list">
 	Met dank aan
