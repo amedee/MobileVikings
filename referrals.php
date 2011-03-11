@@ -1,4 +1,4 @@
-<link href="inline-list.css" rel="stylesheet" type="text/css">
+<link href="./inline-list.css" rel="stylesheet" type="text/css">
 <div
 	id="inline-list">
 	Met dank aan
@@ -12,6 +12,6 @@
 			href="http://mobilevikings.com/referral/nWDDPmWjqDNslgWicXgSmAmjpcuOgUEB/"
 			title="Word een Viking"><img
 			src="http://mobilevikings.com/nl/referral/image/nWDDPmWjqDNslgWicXgSmAmjpcuOgUEB/banner2.jpg/"
-			title="Word een Viking" alt="" /></a>
+			title="Word een Viking" alt="" /> </a>
 	</p>
 </div>
