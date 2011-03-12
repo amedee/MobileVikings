@@ -23,6 +23,6 @@ else {
 		printf ('>%s</li>' . PHP_EOL, trim($item['name']));
 		$i++;
 	}
-	echo('<ul>' . PHP_EOL);
+	echo('</ul>' . PHP_EOL);
 }
 ?>
