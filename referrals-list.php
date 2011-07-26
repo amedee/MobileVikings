@@ -2,7 +2,7 @@
 include_once "config.php";
 $url = 'https://' . $user . ':' . $password . '@mobilevikings.com/api/2.0/basic/points/referrals.json?msisdn=' . $msisdn;
 $cache_file = 'referrals.xml';
-$cache_life = '3600'; //caching time, in seconds
+$cache_life = '14400'; // caching time, in seconds. 14400 seconds = 4 hours
 $log_file = 'referrals.log';
 
 // Cheap and dirty way to code a cache
