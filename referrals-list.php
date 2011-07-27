@@ -8,13 +8,13 @@ $log_file = 'referrals.log';
 // Cheap and dirty way to code a cache
 if (!file_exists($cache_file) or (time() - filemtime($cache_file) >= $cache_life)){
 	file_put_contents($cache_file, file_get_contents($url));
-	log("Referrals updated");
+	my_log_file("Referrals updated", $log_file);
 }
 
 $contents = file_get_contents($cache_file);
 if ($contents === false) {
 	echo (' verschillende personen ');
-	log("Empty referrals file");
+	my_log_file("Empty referrals file", $log_file);
 }
 else {
 	$contents = utf8_encode($contents);
@@ -35,10 +35,10 @@ else {
 		$i++;
 	}
 	echo('</ul>' . PHP_EOL);
-	log("Referrals displayed");
+	my_log_file("Referrals displayed", $log_file);
 }
 
-function log($message) {
+function my_log_file($message, $log_file) {
 	error_log("[" . date("Y/m/d H:i:s", mktime()) . "] " . $message . "\n", 3, $log_file);
 }
 ?>
